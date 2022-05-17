@@ -15,9 +15,7 @@ img {
 @media (min-width: 0px){
 
 
-    /***************
-    *********** HEADER
-    ***************/
+    /*************** HEADER ***************/
     
     .header {
         display: grid;
@@ -41,9 +39,7 @@ img {
     }
 
 
-    /***************
-    *********** APRESENTAION
-    ***************/
+    /*************** APRESENTAION ***************/
 
     .apresentation__title {
         grid-area: ap-title;       
@@ -64,14 +60,12 @@ img {
     .apresentation {                
         display: grid;
         grid-template: 
-        "ap-title" 100px
+        "ap-title"
         "ap-container-img" 400px  
-        "ap-sub-title" 75px
-        "ap-button" 75px;
-        // grid-template-rows: ;
-        // padding-top: 56px;
+        "ap-sub-title"
+        "ap-button";
         background-color: #E4E4E4;      
-        padding: 52px 0;  
+        padding: 60px 0;  
     }
 
     .apresentation__title {
@@ -131,6 +125,7 @@ img {
         border: none;
         background: #0B7BFB;
         border-radius: 10px;
+        margin-top: 26px;
 
         .apresentation__button__link {
             display: flex;
@@ -144,9 +139,75 @@ img {
             font-weight: 600;
         }
 
-    }
-         
+    }        
 
+
+    .beds-featured__main {
+        grid-area: bf-main;
+    }
+
+    .beds-featured__combo {
+        grid-area: bf-combo;
+    }
+
+    .beds-featured {
+        margin: 40px 20px;        
+    }
+
+    .main__observation {
+        font-size: 14px;
+        line-height: 12px;
+        color: #AFAFB2;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .main__offer {
+        font-size: 32px;
+        margin-top: 8px;
+        font-weight: 700;
+    }
+
+    .beds-featured__main {
+        
+        position: relative;  
+        margin-top: 16px;
+        
+        .main__observation, .main__category, .main__description {
+            position: absolute;
+        }
+
+        .main__observation {
+            top: 24px;
+            left: 15px;            
+        }
+
+        .main__category {
+            top: 40px;
+            left: 15px;  
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 32px;
+            letter-spacing: 1px;
+            max-width: 160px;
+            color: #FFFFFF;
+        }
+
+        .main__description {
+            font-size: 14px;
+            color: #FFFFFF;
+            bottom: 24px;
+            left: 24px;
+        }
+
+        .beds-featured__main__img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+
+    }
 
 }
 
