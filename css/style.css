@@ -1,6 +1,196 @@
-/* line 1, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/style.scss */
-h1 {
-  font-size: 60px;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 5, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/style.scss */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 9, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/style.scss */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+@media (min-width: 0px) {
+  /***************
+    *********** HEADER
+    ***************/
+  /* line 22, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/style.scss */
+  .header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px;
+    background: #F9F9F9;
+    align-items: center;
+    padding: 0 15px;
+  }
+  /* line 31, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/style.scss */
+  .header__logo {
+    justify-self: flex-start;
+  }
+  /* line 35, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/style.scss */
+  .img__hamb {
+    justify-self: end;
+  }
+  /* line 39, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/style.scss */
+  .header__button, .header__navigation {
+    display: none;
+  }
+  /***************
+    *********** APRESENTAION
+    ***************/
+  /* line 48, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/style.scss */
+  .apresentation__title {
+    grid-area: ap-title;
+  }
+  /* line 52, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/style.scss */
+  .apresentation__sub__title {
+    grid-area: ap-sub-title;
+  }
+  /* line 56, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/style.scss */
+  .apresentation__button {
+    grid-area: ap-button;
+  }
+  /* line 60, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/style.scss */
+  .apresentation__container__img {
+    grid-area: ap-container-img;
+  }
+  /* line 64, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/style.scss */
+  .apresentation {
+    display: grid;
+    grid-template: "ap-title" 100px "ap-container-img" 400px   "ap-sub-title" 75px "ap-button" 75px;
+    background-color: #E4E4E4;
+    padding: 52px 0;
+  }
+  /* line 77, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/style.scss */
+  .apresentation__title {
+    margin: auto;
+    max-width: 300px;
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: 600;
+    text-align: center;
+  }
+  /* line 87, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/style.scss */
+  .apresentation__sub_title {
+    max-width: 270px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin: auto;
+  }
+  /* line 95, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/style.scss */
+  .apresentation__container__img {
+    position: relative;
+    align-self: center;
+  }
+  /* line 100, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/style.scss */
+  .apresentation__img__bed {
+    position: relative;
+    margin: 0 auto;
+    max-width: 280px;
+    z-index: 10;
+  }
+  /* line 107, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/style.scss */
+  .cloud__1, .cloud__2, .cloud__3 {
+    position: absolute;
+    z-index: 5;
+  }
+  /* line 112, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/style.scss */
+  .cloud__1 {
+    top: -15px;
+    left: 5px;
+  }
+  /* line 117, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/style.scss */
+  .cloud__2 {
+    top: 10px;
+    right: 10px;
+  }
+  /* line 122, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/style.scss */
+  .cloud__3 {
+    top: -2px;
+    left: -15px;
+  }
+  /* line 127, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/style.scss */
+  .apresentation__button {
+    justify-self: center;
+    align-self: center;
+    padding: 10px;
+    border: none;
+    background: #0B7BFB;
+    border-radius: 10px;
+  }
+  /* line 135, ../../../../../laragon/www/Bomsono-Landing-Page/css/scss/style.scss */
+  .apresentation__button .apresentation__button__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 20px;
+    gap: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
